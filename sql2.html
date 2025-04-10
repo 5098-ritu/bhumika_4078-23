@@ -1,0 +1,700 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+body{
+background-image:url(BC.WEBP);
+background-repeat:no-repeat;
+background-attachment:fixed;
+background-size:100%100%;
+}
+</style>
+ <style>
+  a {
+            color: blue; /* Normal link color */
+        }
+        a:hover {
+            color: green; /* Color when hovered */
+        }
+        a:visited {
+            color: purple; /* Color for visited links */
+}
+</style>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Program Questions</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+.navbar a:hover{
+background-color:#CD853F;
+}
+
+
+
+
+
+
+        nav {
+            background-color:#E1D2CB;
+            color: black;
+            padding: 1px;
+ margin:5px;
+        }
+.navbar a:hover{
+background-color:#CD853F;
+}
+        nav ul {
+            list-style-type: none;
+background-color:#E1D2CB;
+            margin:5px;
+            padding: 10px;
+        }
+
+
+
+
+
+
+
+
+
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: black;
+            text-decoration: none;
+        }
+
+        .container {
+            display: flex;
+            padding: 20px;
+        }
+
+        .question-list {
+            flex: 1;
+            padding: 20px;
+            background-color:#CBBDB7;
+            margin-right: 10px;
+        }
+
+        .code-output-container {
+            flex: 2;
+            display: none; /* Initially hide the output */
+            flex-direction: column;
+        }
+
+        .code-container, .output-container {
+            flex: 1;
+            padding: 20px;
+            background-color: #CBBDB7;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            margin-top: 0;
+        }
+
+
+/* This will change the color of all links */
+a {
+    color: black; /* Normal link color */
+}
+
+a:hover {
+    color: grey; /* Color when hovered */
+}
+
+a:visited {
+    color: black; /* Color for visited links */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.dropdown-menu {
+    display: none; /* Hide dropdown by default */
+    padding-left: 20px;
+    margin-top: 5px;
+}
+
+.dropdown-menu li {
+    margin: 5px 0;
+}
+
+.dropdown-menu li a {
+    font-size: 18px;
+    color: #454545;
+    text-decoration: none;
+}
+
+.dropdown-menu li a:hover {
+    color: #ddd;
+}
+
+.question-list li a {
+    cursor: pointer;
+}
+
+.question-list li a:hover {
+    color: #ddd;
+}
+
+
+
+
+
+
+    </style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+        function showProgram(questionNumber) {
+            // Hide all code and output sections
+            document.querySelectorAll('.code-container, .output-container').forEach((el) => {
+                el.style.display = 'none';
+            });
+
+            // Show the selected question's code and output
+            document.getElementById('code' + questionNumber).style.display = 'block';
+            document.getElementById('output' + questionNumber).style.display = 'block';
+
+            // Show the main output container
+            document.getElementById('output-container').style.display = 'flex';
+        }
+
+        function toggleDropdown(dropdownId) {
+            var dropdown = document.getElementById(dropdownId);
+            dropdown.style.display = (dropdown.style.display === 'block') ? 'none' : 'block';
+        }
+function toggleDropdown(dropdownId) {
+    var dropdown = document.getElementById(dropdownId);
+    dropdown.style.display = (dropdown.style.display === 'block') ? 'none' : 'block';
+}
+
+    </script>
+
+
+
+</head>
+
+
+
+
+
+
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+<li><a href="WEB.html">QUIRIES</a></li>
+
+            <li><a href="about.html">ABOUT US </a></li>
+<li><a href="contact.html">SUBMITTED BY</a></li>
+            
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="question-list">
+
+
+            <h2><center>SQL QUERIES</center></h2>
+ <h3>Querying Multiple Tables Using Joins</h3>
+      <ul>
+        <li>
+          <a href="#" onclick="toggleDropdown('dropdownMenu1')">1. JOINS</a>
+          <ul id="dropdownMenu1" class="dropdown-menu">
+            <li><a href="#" onclick="showProgram(1)">a) Equi Join (Inner Join)</a></li>
+            <li><a href="#" onclick="showProgram(2)">b) Cross Join</a></li>
+            <li><a href="#" onclick="showProgram(6)">c) Self Join</a></li>
+            <li>
+              <a href="#" onclick="toggleDropdown('dropdownMenu2')">d) Outer Joins</a>
+              <ul id="dropdownMenu2" class="dropdown-menu">
+                <li><a href="#" onclick="showProgram(3)">1. Left Outer Join</a></li>
+                <li><a href="#" onclick="showProgram(4)">2. Right Outer Join</a></li>
+                <li><a href="#" onclick="showProgram(5)">3. Full Outer Join</a></li>
+
+            
+         </ul>
+        </li>
+      </ul>
+</ul>
+ <h3>NESTED QUERIES</h3>
+                <li>
+                    <a href="#" onclick="toggleDropdown('dropdownMenu3')">Nested Query</a>
+                    <ul id="dropdownMenu3" class="dropdown-menu">
+                        <li><a href="#" onclick="showProgram(7)">1. Single-row Subquery</a></li>
+                        <li><a href="#" onclick="showProgram(8)">2. Multi-row Subquery</a></li>
+                        </ul>
+                    </li>
+             
+
+               </ul>
+
+        </div>
+
+        <div class="code-output-container" id="output-container">
+            <!-- First query and output (inner join) -->
+            <div class="code-container" id="code1">
+                <h2><center><u>Query</center></u></h2>
+                <pre><code><h3><center>Syntax:</center></h3>
+<h3><center>Inner Join</center></h3>
+<center><h3>Syntax:</h3>
+SELECT column1, column2, ...
+FROM table1
+INNER JOIN table2
+ON table1.column = table2.column;
+
+<h3>Ex:</h3>
+mysql> SELECT Students.Name, Courses.CourseName 
+FROM Students
+INNER JOIN Courses 
+ON Students.CourseID = Courses.CourseID;
+</center>
+
+</code></pre>
+            </div>
+            <div class="output-container" id="output1">
+                <h2><center><u>Output</u></center></h2>
+               <center> <pre><code>
+<h3>Table Before Join:</h3>
+    <pre><code>
++--------+----------+---------+
+| Name   | CourseID | CourseName |
++--------+----------+---------+
+| Lucky  |   C1     | Math      |
+| Ajay   |   C2     | Science   |
+| Mahi   |   C3     | History   |
+| Neha   |   C4     | English   |
++--------+----------+---------+
+4 rows in set (0.00 sec)
+
++----------+------------+
+| CourseID | CourseName |
++----------+------------+
+|   C1     | Math       |
+|   C2     | Science    |
+|   C3     | History    |
+|   C4     | English    |
++----------+------------+
+4 rows in set (0.00 sec)
+</code></pre>
+<h3>After Applying Join:</h3><pre><code>
++--------+-----------+
+| Name   | CourseName|
++--------+-----------+
+| Lucky  | Math      |
+| Ajay   | Science   |
+| Mahi   | History   |
+| Neha   | English   |
++--------+-----------+
+4 rows in set (0.00 sec)
+</center></code></pre>
+            </div>
+
+            <!-- Second query and output (Cross join) -->
+            <div class="code-container" id="code2">
+                <h2><center><u>Query</u></center></h2>
+               <center> <pre><code><h3>Syntax:</h3>
+<h3>Cartesian Join</h3>
+<h3>Syntax:</h3>
+SELECT column1, column2, ...
+FROM table1
+CROSS JOIN table2;
+
+<h3>Ex:</h3>
+mysql> SELECT Students.Name, Courses.CourseName
+FROM Students
+CROSS JOIN Courses;
+
+</code></pre></center>
+            </div>
+            <div class="output-container" id="output2">
+                <h2><center><u>Output</center></u></h2>
+                <center><pre><code>
+ <h3>Table Before Join:</h3>
+    <pre><code>
++--------+----------+
+| Name   | CourseID |
++--------+----------+
+| Lucky  |   C1     |
+| Ajay   |   C2     |
+| Mahi   |   C3     |
+| Neha   |   C4     |
++--------+----------+
+4 rows in set (0.00 sec)
+
++----------+------------+
+| CourseID | CourseName |
++----------+------------+
+|   C1     | Math       |
+|   C2     | Science    |
+|   C3     | History    |
+|   C4     | English    |
++----------+------------+
+4 rows in set (0.00 sec)
+    </code></pre>
+
+    <h3>After Applying CROSS JOIN:</h3>
+    <pre><code>
++--------+-----------+
+| Name   | CourseName|
++--------+-----------+
+| Lucky  | Math      |
+| Lucky  | Science   |
+| Lucky  | History   |
+| Lucky  | English   |
+| Ajay   | Math      |
+| Ajay   | Science   |
+| Ajay   | History   |
+| Ajay   | English   |
+| Mahi   | Math      |
+| Mahi   | Science   |
+| Mahi   | History   |
+| Mahi   | English   |
+| Neha   | Math      |
+| Neha   | Science   |
+| Neha   | History   |
+| Neha   | English   |
++--------+-----------+
+16 rows in set (0.00 sec)
+</code></pre></center>
+            </div>
+
+            <!-- Third query and output (left outer join) -->
+            <div class="code-container" id="code3">
+                <h2><center><u>Query</u></center></h2>
+               <center> <pre><code>
+
+<h2>Left Outer Join</h2>
+<h3>Syntax:</h3>
+SELECT column1, column2, ...
+FROM table1
+LEFT OUTER JOIN table2
+ON table1.column = table2.column;
+
+<h3>Ex:</h3>
+mysql> SELECT Students.Name, Courses.CourseName
+FROM Students
+LEFT OUTER JOIN Courses
+ON Students.CourseID = Courses.CourseID;
+</code></pre></center>
+            </div>
+            <div class="output-container" id="output3">
+                <h2><center><u>Output</center></u></h2>
+              <center>  <pre><code>
+
+<h3>Table Before Join:</h3>
+    <pre><code>
++--------+----------+
+| Name   | CourseID |
++--------+----------+
+| Lucky  |   C1     |
+| Ajay   |   C2     |
+| Mahi   |   C3     |
+| Neha   |   NULL    |
++--------+----------+
+4 rows in set (0.00 sec)
+
++----------+------------+
+| CourseID | CourseName |
++----------+------------+
+|   C1     | Math       |
+|   C2     | Science    |
+|   C3     | History    |
+|   C4     | English    |
++----------+------------+
+4 rows in set (0.00 sec)
+    </code></pre>
+
+    <h3>After Applying LEFT OUTER JOIN:</h3>
+    <pre><code>
++--------+-----------+
+| Name   | CourseName|
++--------+-----------+
+| Lucky  | Math      |
+| Ajay   | Science   |
+| Mahi   | History   |
+| Neha   | NULL      |
++--------+-----------+
+4 rows in set (0.00 sec)
+                </code></pre></center>
+            </div>
+
+            <!-- Fourth query and output (right outer join) -->
+            <div class="code-container" id="code4">
+                <h2><center><u>Query</u></center></h2>
+                <center><pre><code>
+<h2>Right Outer Join</h2>
+<h3>Syntax:</h3>
+SELECT column1, column2, ...
+FROM table1
+RIGHT OUTER JOIN table2
+ON table1.column = table2.column;
+
+<h3>Ex:</h3>
+mysql> SELECT Students.Name, Courses.CourseName
+FROM Students
+RIGHT OUTER JOIN Courses
+ON Students.CourseID = Courses.CourseID;
+</code></pre></center>
+            </div>
+            <div class="output-container" id="output4">
+                <h2><center><u>Output</u></center></h2>
+               <center> <pre><code>
+
+<h3>Table Before Join:</h3>
+    <pre><code>
++--------+----------+
+| Name   | CourseID |
++--------+----------+
+| Lucky  |   C1     |
+| Ajay   |   C2     |
+| Mahi   |   C3     |
+| Neha   |   NULL    |
++--------+----------+
+4 rows in set (0.00 sec)
+
++----------+------------+
+| CourseID | CourseName |
++----------+------------+
+|   C1     | Math       |
+|   C2     | Science    |
+|   C3     | History    |
+|   C4     | English    |
++----------+------------+
+4 rows in set (0.00 sec)
+    </code></pre>
+
+    <h3>After Applying RIGHT OUTER JOIN:</h3>
+    <pre><code>
++--------+-----------+
+| Name   | CourseName|
++--------+-----------+
+| Lucky  | Math      |
+| Ajay   | Science   |
+| Mahi   | History   |
+| NULL   | English   |
++--------+-----------+
+4 rows in set (0.00 sec)
+                </code></pre></center>
+            </div>
+
+            <!-- Fifth query and output (full outer join) -->
+            <div class="code-container" id="code5">
+                <h2><center><u>Query</u></center></h2>
+             <center>   <pre><code>
+<h2>Full Outer Join</h2>
+<h3>Syntax:</h3>
+SELECT column1, column2, ...
+FROM table1
+FULL OUTER JOIN table2
+ON table1.column = table2.column;
+
+<h3>Ex:</h3>
+mysql> SELECT Students.Name, Courses.CourseName
+FROM Students
+FULL OUTER JOIN Courses
+ON Students.CourseID = Courses.CourseID;
+</code></pre></center>
+            </div>
+            <div class="output-container" id="output5">
+                <h2><center><u>Output</center></u></h2>
+               <center> <pre><code>
+
+    <h3>Table Before Join:</h3>
+    <pre><code>
++--------+----------+
+| Name   | CourseID |
++--------+----------+
+| Lucky  |   C1     |
+| Ajay   |   C2     |
+| Mahi   |   C3     |
+| Neha   |   NULL    |
++--------+----------+
+4 rows in set (0.00 sec)
+
++----------+------------+
+| CourseID | CourseName |
++----------+------------+
+|   C1     | Math       |
+|   C2     | Science    |
+|   C3     | History    |
+|   C4     | English    |
++----------+------------+
+4 rows in set (0.00 sec)
+    </code></pre>
+
+    <h3>After Applying FULL OUTER JOIN:</h3>
+    <pre><code>
++--------+-----------+
+| Name   | CourseName|
++--------+-----------+
+| Lucky  | Math      |
+| Ajay   | Science   |
+| Mahi   | History   |
+| Neha   | NULL      |
+| NULL   | English   |
++--------+-----------+
+5 rows in set (0.00 sec)
+                </code></pre></center>
+            </div>
+
+            <!-- self join -->
+            <div class="code-container" id="code6">
+                <h2><center><u>Query</center></u></h2>
+                <center><pre><code>
+<h2>Self Join</h2>
+<h3>Syntax:</h3>
+SELECT A.column1, B.column2
+FROM table_name A, table_name B
+WHERE A.column = B.column;
+
+<h3>Ex:</h3>
+mysql> SELECT A.Name AS StudentName, B.Name AS MentorName
+FROM Students A, Students B
+WHERE A.MentorID = B.StudentID;
+                </code></pre></center>
+            </div>
+            <div class="output-container" id="output6">
+                <h2><center><u>Output</u></center></h2>
+                <center><pre><code><center><h3>Table Before Join:</h3>
+    <pre><code>
++-----------+-----------+-----------+
+| StudentID | Name      | MentorID  |
++-----------+-----------+-----------+
+| 1         | Lucky     | 2         |
+| 2         | Ajay      | 3         |
+| 3         | Mahi      | NULL      |
+| 4         | Neha      | 2         |
++-----------+-----------+-----------+
+4 rows in set (0.00 sec)
+    </code></pre>
+
+    <h3>After Applying SELF JOIN:</h3>
+    <pre><code>
++--------------+-------------+
+| StudentName  | MentorName  |
++--------------+-------------+
+| Lucky        | Ajay        |
+| Ajay         | Mahi        |
+| Neha         | Ajay        |
++--------------+-------------+
+3 rows in set (0.00 sec)
+                </code></pre></center>
+            </div>
+
+<!-- self join -->
+            <div class="code-container" id="code7">
+                <h2><center><u>Query</center></u></h2>
+                <center><pre><code>    
+
+<h4>Single-row Subquery</h4>
+<h3>Syntax:</h3>
+SELECT column_name
+FROM table_name
+WHERE column_name = (SELECT column_name FROM another_table WHERE condition);
+
+<h3>Ex:</h3>
+mysql> SELECT name FROM employees
+       WHERE salary = (SELECT MAX(salary) FROM employees);
+                </code></pre></center>
+            </div>
+            <div class="output-container" id="output7">
+                <h2><center><u>Output</u></center></h2>
+                <center><pre><code><center>
++------------+
+| name       |
++------------+
+| John Smith |
++------------+
+1 row in set (0.02 sec)
+                </code></pre></center>
+            </div>
+<!-- self join -->
+            <div class="code-container" id="code8">
+                <h2><center><u>Query</center></u></h2>
+                <center><pre><code>    
+
+
+<h4>Multi-row Subquery</h4>
+<h3>Syntax:</h3>
+SELECT column_name
+FROM table_name
+WHERE column_name IN (SELECT column_name FROM another_table WHERE condition);
+
+<h3>Ex:</h3>
+mysql> SELECT name FROM employees
+       WHERE department_id IN (SELECT department_id FROM departments WHERE location = 'New York');
+                </code></pre></center>
+            </div>
+            <div class="output-container" id="output8">
+                <h2><center><u>Output</u></center></h2>
+                <center><pre><code><center>
++------------+
+| name       |
++------------+
+| Jane Doe   |
+| Alice Lee  |
++------------+
+2 rows in set (0.01 sec)
+                </code></pre></center>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function showProgram(questionNumber) {
+            // Hide all code and output sections
+            document.querySelectorAll('.code-container, .output-container').forEach((el) => {
+                el.style.display = 'none';
+            });
+
+            // Show the selected question's code and output
+            document.getElementById('code' + questionNumber).style.display = 'block';
+            document.getElementById('output' + questionNumber).style.display = 'block';
+
+            // Show the code-output container
+            document.getElementById('output-container').style.display = 'flex';
+        }
+    </script>
+</body>
+</html>

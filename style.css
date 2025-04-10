@@ -1,0 +1,183 @@
+
+
+body
+{
+margin:0px;
+
+    
+}
+
+.navbar ul{
+list-style-type:none;
+background-color:#E1D2CB;/*#AEBDCA; */ /*#FFD700;*/
+padding:20px;/*12px;*/
+margin:5px;
+overflow:hidden;
+}
+.navbar a{
+color:black;
+text-decoration:none;
+padding:60px;/*30px;*/
+display:black;
+text-align:center;
+}
+.navbar a:hover{
+background-color:#CD853F;
+}
+.navbar li{
+float:right;
+}
+
+
+
+
+
+  p {
+            margin-bottom: 15px; /* Add space between paragraphs */
+            padding: 0px; /* Add padding inside the paragraph */
+        }
+
+
+/* Layout & Containers */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    min-height: 60vh;
+}
+
+.container {
+    display: flex;
+    padding: 20px;
+    margin-top: 100px;
+    justify-content: space-between;
+}
+
+/* Layout change when program is selected */
+.container.program-open {
+    display: flex;
+    flex-direction: row;
+}
+
+.container.program-open .question-list {
+    flex: 1;
+    max-width: 40%;
+    overflow-y: auto;
+    border-right: 2px solid #c4a484;
+    padding-right: 10px;
+}
+
+.container.program-open .code-output-container {
+    flex: 2;
+    max-width: 60%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+}
+
+/* Link Box */
+.link-box {
+    background-color: #C39063;
+    padding: 18px 28px;
+    border-radius: 8px;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.link-box a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+.link-box a:hover {
+    background-color: #5A3E2B;
+    color: #FFFFFF;
+    transform: scale(1.05);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1000px; /* Maximum width for the container */
+}
+
+/*.topic {
+    background:#E1D2CB;/*#AEBDCA; *//*#FFD700;*/
+    border: 1px solid #ccc;
+    border-radius: 10px; /* More rounded corners */
+    padding: 40px 50px; /*30px 20px; Adjusted padding */
+    margin: 15px; /* 15px;  Margin between topics */
+    width: 180px; /* Increased width for better spacing */
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Softer shadow */
+    transition: transform 0.2s, box-shadow 0.2s; /* Transition for shadow */
+}
+
+.topic:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3); /* Shadow on hover */
+}
+
+.topic a {
+    text-decoration: none; /* Remove underline */
+    color: #333; /* Dark text color */
+    font-weight: bold; /* Bold text */
+}*/
+
+
+
+
+
+/* Container to center the .topic */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height to center vertically */
+    width: 100%; /* Full width of the parent */
+margin:0;
+paddiing:0;
+}
+
+/* Styling for the .topic box */
+.topic {
+    background: #E1D2CB; /* Light beige background color */
+    border: 1px solid #ccc; /* Light grey border */
+    border-radius: 10px; /* Rounded corners */
+    padding: 50px 50px; /* Padding for spacing inside */
+    margin: 70px; /* Margin between topics */
+    width: 250px; /* Width of the topic box */
+    text-align:center; /* Center text */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Softer shadow */
+    transition: transform 0.2s, box-shadow 0.2s; /* Smooth transition for scaling and shadow */
+}
+
+/* Hover effect for the .topic */
+.topic:hover {
+    transform: scale(1.05); /* Scale the box on hover */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3); /* Shadow on hover */
+}
+
+/* Styling for the link inside the .topic */
+.topic a {
+    text-decoration: none; /* Remove underline */
+    color: #333; /* Dark text color */
+    font-weight: bold; /* Bold text */
+}
+
